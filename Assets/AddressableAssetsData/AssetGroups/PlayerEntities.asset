@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: PlayerEntities
+  m_EditorClassIdentifier: 
+  m_GroupName: PlayerEntities
+  m_GUID: 081f497b95ee3e644b5c6007addcd465
+  m_SerializeEntries:
+  - m_GUID: a459f34878ded54418470179906a7487
+    m_Address: PlayerEntity_Potman
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3e81a56f797583c448e0bae63516e0d6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: efa2a02b5c8352f48bcf349f16bc7f2b, type: 2}
+    - {fileID: 11400000, guid: 804cf30f062575c40a7362155211d7f2, type: 2}

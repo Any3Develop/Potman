@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AbilityViews
+  m_EditorClassIdentifier: 
+  m_GroupName: AbilityViews
+  m_GUID: 2bab55da11cf7ac44ab6b1829593fca1
+  m_SerializeEntries:
+  - m_GUID: 349df6d30675aaf48bf8d7880c7a9b33
+    m_Address: Ability_ProjectileView_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 757fc4e6f0844b349abdfd8b583f0dc3
+    m_Address: Ability_ProjectileView_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff7a4798a00979b4a9180e41a8bc92a2
+    m_Address: Ability_ProjectileView_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3e81a56f797583c448e0bae63516e0d6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 15bd5f33ac0c3ec42aba0a4bb344a0cf, type: 2}
+    - {fileID: 11400000, guid: d44a60f3ac01cb44a80ef4f4179c8baa, type: 2}

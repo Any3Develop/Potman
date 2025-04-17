@@ -1,0 +1,79 @@
+[
+  {
+    "$type": "Potman.Lobby.AbilityTree.Data.AbilityNode, Potman",
+    "Id": "Perk_Head_0",
+    "GraphId": "AbilityTree_Potman_Head",
+    "Icon": "Stick",
+    "Depends": [],
+    "Costs": [
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.CostModel, Potman",
+        "type": "Rare",
+        "value": 10
+      }
+    ],
+    "Upgrades": [
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeAbilityModel, Potman",
+        "id": "BattleAbility0",
+        "func": "Union",
+        "stats": [
+          {
+            "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeStatModel, Potman",
+            "func": "Addition",
+            "stat": "None",
+            "value": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$type": "Potman.Lobby.AbilityTree.Data.AbilityNode, Potman",
+    "Id": "Perk_Head_1.1",
+    "GraphId": "AbilityTree_Potman_Head",
+    "Icon": "Background",
+    "Depends": [
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.AbilityLinkNode, Potman",
+        "Id": "Perk_Head_0",
+        "GraphId": "AbilityTree_Potman_Head",
+        "IsRequired": false
+      }
+    ],
+    "Costs": [
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.CostModel, Potman",
+        "type": "Common",
+        "value": 10
+      }
+    ],
+    "Upgrades": [
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeStatModel, Potman",
+        "func": "Addition",
+        "stat": "None",
+        "value": 0.0
+      },
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeStatModel, Potman",
+        "func": "Addition",
+        "stat": "None",
+        "value": 0.0
+      },
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeAbilityModel, Potman",
+        "id": "BattleAbility0",
+        "func": "Union",
+        "stats": [
+          {
+            "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeStatModel, Potman",
+            "func": "Addition",
+            "stat": "None",
+            "value": 0.0
+          }
+        ]
+      }
+    ]
+  }
+]

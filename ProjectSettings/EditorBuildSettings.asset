@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Sources/Scenes/Lobby.unity
+    guid: 4e36350939449144785bcf6874f8b35e
+  - enabled: 1
+    path: Assets/Sources/Scenes/Graveyard.unity
+    guid: df44bd35353b363479f83f1a68760f11
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: c88cc0e8b2f17a448ac36c69a8457032, type: 2}
+    com.unity.dt.app-ui: {fileID: 11400000, guid: 99f9c9493070a9d4c979a8fec7c5a8d3, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ac54f98fc6025e94da2d5011e0dde220, type: 3}
+    com.unity.localization.settings: {fileID: 11400000, guid: 6846da12320d70641aef5804ba8a1585, type: 2}
+  m_UseUCBPForAssetBundles: 0

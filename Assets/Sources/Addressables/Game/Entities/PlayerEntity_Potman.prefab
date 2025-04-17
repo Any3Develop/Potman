@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1091477797470335352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7552932517911293657}
+  - component: {fileID: 5376136372793232709}
+  - component: {fileID: 58459433046286982}
+  - component: {fileID: 6119926300609015882}
+  - component: {fileID: 112684793359460506}
+  - component: {fileID: 8112931386227892444}
+  - component: {fileID: 8522989129245653477}
+  - component: {fileID: 6917852989213221217}
+  m_Layer: 11
+  m_Name: PlayerEntity_Potman
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7552932517911293657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091477797470335352}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7258173408536108540}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5376136372793232709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091477797470335352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9777788f8c9f49869924d9c547059f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: {fileID: 1091477797470335352}
+  sharedMap: []
+  componentMap:
+    m_keys:
+    - Root
+    - PlayerEntity
+    - PlayerMovement
+    - PlayerAnimator
+    - PlayerAimPositioning
+    - PlayerAutoTargeting
+    - CharacterController
+    - Mapper:PlayerView_Potman
+    m_values:
+    - {fileID: 7552932517911293657}
+    - {fileID: 58459433046286982}
+    - {fileID: 6119926300609015882}
+    - {fileID: 112684793359460506}
+    - {fileID: 8112931386227892444}
+    - {fileID: 8522989129245653477}
+    - {fileID: 6917852989213221217}
+    - {fileID: 1293600059666019143}
+--- !u!114 &58459433046286982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091477797470335352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6eeb70bc295487eaa1ea3131fe43a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <PoolableId>k__BackingField: ae024c0e-7468-4798-9869-b1a0e97c1b98
+  <Root>k__BackingField: {fileID: 7552932517911293657}
+  <Container>k__BackingField: {fileID: 1091477797470335352}
+  <ActiveOnSpawn>k__BackingField: 1
+  <ActiveOnRelease>k__BackingField: 0
+  <IsSpawned>k__BackingField: 0
+  <IsDisposed>k__BackingField: 0
+--- !u!114 &6119926300609015882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091477797470335352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e63eb44d194d4957a1ed1cd7820511f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &112684793359460506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091477797470335352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3cf30279254d59b9be4f502330d080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8112931386227892444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091477797470335352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb1eedf23b598e4d8b0627c50842d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8522989129245653477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091477797470335352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f854db8728a453f981bb3ef02735d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testRange: 50
+  refreshTime: 1.5
+--- !u!143 &6917852989213221217
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091477797470335352}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 3.5
+  m_Radius: 0.5
+  m_SlopeLimit: 90
+  m_StepOffset: 1
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.75, z: 0}
+--- !u!1001 &1153292723684921164
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7552932517911293657}
+    m_Modifications:
+    - target: {fileID: 7588695621431273545, guid: eb8768b878fe0f145b02e6a8c4888020, type: 3}
+      propertyPath: m_Name
+      value: PlayerView_Potman
+      objectReference: {fileID: 0}
+    - target: {fileID: 8411430929418113712, guid: eb8768b878fe0f145b02e6a8c4888020, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8411430929418113712, guid: eb8768b878fe0f145b02e6a8c4888020, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8411430929418113712, guid: eb8768b878fe0f145b02e6a8c4888020, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eb8768b878fe0f145b02e6a8c4888020, type: 3}
+--- !u!114 &1293600059666019143 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 140346034979699723, guid: eb8768b878fe0f145b02e6a8c4888020, type: 3}
+  m_PrefabInstance: {fileID: 1153292723684921164}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9777788f8c9f49869924d9c547059f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &7258173408536108540 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8411430929418113712, guid: eb8768b878fe0f145b02e6a8c4888020, type: 3}
+  m_PrefabInstance: {fileID: 1153292723684921164}
+  m_PrefabAsset: {fileID: 0}

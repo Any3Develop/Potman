@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc4bc6372ed40cd886a1411552b238e, type: 3}
+  m_Name: SpawnCfg_Infantry_All
+  m_EditorClassIdentifier: 
+  whenUnitsDied:
+    enabled: 1
+    repeat: -1
+    starts: -1
+    ends: -1
+    each: 10
+    passedLast: 0
+    repeatLeft: 0
+  whenGameTime:
+    enabled: 0
+    repeat: -1
+    starts: -1
+    ends: -1
+    each: -1
+    passedLast: 1786
+    repeatLeft: -1
+  whenGameProgress:
+    enabled: 0
+    repeat: 0
+    starts: -1
+    ends: -1
+    each: -1
+    passedLast: -1
+    repeatLeft: 0
+  whenLevelUp:
+    enabled: 0
+    repeat: 0
+    starts: 0
+    ends: 0
+    each: 0
+    passedLast: 0
+    repeatLeft: 0
+  spawnFunction: 2
+  spawnIds: 08000000090000000a0000000b000000
+  idsOrderFunction: 2
+  entities:
+  - {fileID: 11400000, guid: 2fc948fcc33be23418dd6968e9d78133, type: 2}
+  - {fileID: 11400000, guid: 2b28f8136d795614882f7b17ffd6ac26, type: 2}
+  - {fileID: 11400000, guid: 5c8e6d9f989d635449900fa933f99b5e, type: 2}
+  - {fileID: 11400000, guid: 2fc948fcc33be23418dd6968e9d78133, type: 2}
+  - {fileID: 11400000, guid: 2b28f8136d795614882f7b17ffd6ac26, type: 2}
+  - {fileID: 11400000, guid: 5c8e6d9f989d635449900fa933f99b5e, type: 2}
+  - {fileID: 11400000, guid: 2fc948fcc33be23418dd6968e9d78133, type: 2}
+  - {fileID: 11400000, guid: 2b28f8136d795614882f7b17ffd6ac26, type: 2}
+  - {fileID: 11400000, guid: 5c8e6d9f989d635449900fa933f99b5e, type: 2}
+  - {fileID: 11400000, guid: 5c8e6d9f989d635449900fa933f99b5e, type: 2}

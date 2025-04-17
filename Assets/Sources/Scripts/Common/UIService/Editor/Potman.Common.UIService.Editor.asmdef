@@ -1,0 +1,17 @@
+{
+  "name": "Potman.Common.UIService.Editor",
+  "rootNamespace": "Potman",
+  "references": [
+    "Potman.Common.UIService"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "noEngineReferences": false
+}

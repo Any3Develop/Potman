@@ -1,0 +1,579 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad8f2220607dac4db5082ff333fafb8, type: 3}
+  m_Name: Units_Default_Behaviour
+  m_EditorClassIdentifier: 
+  Blackboard: {fileID: 4872782522658328003}
+  m_Description: 
+  m_Nodes:
+  - rid: 949340548876468224
+  - rid: 949340548876468227
+  - rid: 949340548876468230
+  - rid: 949340548876468345
+  - rid: 949340548876468346
+  - rid: 949340548876468347
+  - rid: 949340548876468396
+  m_VersionTimestamp: 638772315720747294
+  m_DebugInfo: {fileID: 7633257075507145525}
+  m_RuntimeGraph: {fileID: 3029623184246898013}
+  AssetID:
+    m_Value0: 6063754690321168515
+    m_Value1: 12939693986520471080
+  Story:
+    Story: 
+    StoryVariableNames: []
+    Variables: []
+  m_NodeModelsInfo:
+  - Name: On Start
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 3335272451348827663
+      m_Value1: 11549843281177505721
+    Variables: []
+    NamedChildren: []
+  - Name: FollowPlayer
+    Story: Agent starts to follow the player
+    RuntimeTypeID:
+      m_Value0: 6951514140584142039
+      m_Value1: 15677207714462081718
+    Variables: []
+    NamedChildren: []
+  - Name: AttackPlayer
+    Story: Agent starts an attack
+    RuntimeTypeID:
+      m_Value0: 11905788783960013328
+      m_Value1: 11037016653644338951
+    Variables: []
+    NamedChildren: []
+  - Name: Conditional Branch
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 12334964803190848789
+      m_Value1: 14608808926743427008
+    Variables: []
+    NamedChildren:
+    - True
+    - False
+  - Name: Patrol
+    Story: Agent patrol until player died
+    RuntimeTypeID:
+      m_Value0: 4545096015007557993
+      m_Value1: 15272311879420361912
+    Variables: []
+    NamedChildren: []
+  m_Blackboards: []
+  m_MainBlackboardAuthoringAsset: {fileID: 4872782522658328003}
+  m_CommandBuffer:
+    m_Commands: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 949340548876468224
+      type: {class: StartNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 39.39091, y: -203.07689}
+        ID:
+          m_Value0: 12491821659571820136
+          m_Value1: 6596735951538077285
+        Parents: []
+        PortModels:
+        - rid: 949340548876468225
+        NodeType:
+          m_SerializableType: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 3335272451348827663
+          m_Value1: 11549843281177505721
+        m_FieldValues: []
+        Repeat: 1
+    - rid: 949340548876468225
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 949340548876468224
+        m_Connections:
+        - rid: 949340548876468348
+    - rid: 949340548876468227
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -69.20909, y: 90.123116}
+        ID:
+          m_Value0: 7380806618868610342
+          m_Value1: 1798862753351638779
+        Parents: []
+        PortModels:
+        - rid: 949340548876468228
+        - rid: 949340548876468229
+        NodeType:
+          m_SerializableType: Potman.Game.Entities.Units.Behaviours.Modules.FollowPlayer,
+            Potman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 6951514140584142039
+          m_Value1: 15677207714462081718
+        m_FieldValues: []
+    - rid: 949340548876468228
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 949340548876468227
+        m_Connections:
+        - rid: 949340548876468352
+    - rid: 949340548876468229
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 949340548876468227
+        m_Connections:
+        - rid: 949340548876468231
+    - rid: 949340548876468230
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -69.20909, y: 177.72311}
+        ID:
+          m_Value0: 14890389129449174205
+          m_Value1: 5159451632829580154
+        Parents: []
+        PortModels:
+        - rid: 949340548876468231
+        - rid: 949340548876468232
+        NodeType:
+          m_SerializableType: Potman.Game.Entities.Units.Behaviours.Modules.AttackPlayer,
+            Potman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 11905788783960013328
+          m_Value1: 11037016653644338951
+        m_FieldValues: []
+    - rid: 949340548876468231
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 949340548876468230
+        m_Connections:
+        - rid: 949340548876468229
+    - rid: 949340548876468232
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 949340548876468230
+        m_Connections: []
+    - rid: 949340548876468345
+      type: {class: BranchingConditionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 39.390915, y: -100.276886}
+        ID:
+          m_Value0: 14120704080530952444
+          m_Value1: 16356084328795903520
+        Parents: []
+        PortModels:
+        - rid: 949340548876468348
+        - rid: 949340548876468349
+        - rid: 949340548876468350
+        NodeType:
+          m_SerializableType: Unity.Behavior.BranchingConditionComposite, Unity.Behavior,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 12334964803190848789
+          m_Value1: 14608808926743427008
+        m_FieldValues: []
+        <ConditionModels>k__BackingField:
+        - ConditionType:
+            m_SerializableType: Potman.Game.Entities.Units.Behaviours.Modules.IsPlayerAliveCondition,
+              Potman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          ConditionTypeID:
+            m_Value0: 15331344255074551872
+            m_Value1: 2093574105352222158
+          NodeModel:
+            rid: 949340548876468345
+          m_FieldValues: []
+          OperatorFieldModel:
+            rid: -2
+        <RequiresAllConditionsTrue>k__BackingField: 0
+        <ShouldTruncateNodeUI>k__BackingField: 0
+    - rid: 949340548876468346
+      type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: -69.20909, y: 2.523117}
+        ID:
+          m_Value0: 1013596246156972798
+          m_Value1: 11708138058978998616
+        Parents: []
+        PortModels:
+        - rid: 949340548876468351
+        - rid: 949340548876468352
+        ParentNodeID:
+          m_Value0: 14120704080530952444
+          m_Value1: 16356084328795903520
+        PortName: True
+    - rid: 949340548876468347
+      type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: 156.79091, y: 2.523117}
+        ID:
+          m_Value0: 7460781878033933143
+          m_Value1: 7997634038048217037
+        Parents: []
+        PortModels:
+        - rid: 949340548876468353
+        - rid: 949340548876468354
+        ParentNodeID:
+          m_Value0: 14120704080530952444
+          m_Value1: 16356084328795903520
+        PortName: False
+    - rid: 949340548876468348
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 949340548876468345
+        m_Connections:
+        - rid: 949340548876468225
+    - rid: 949340548876468349
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: True
+        m_PortDataFlowType: 1
+        m_IsFloating: 1
+        m_NodeModel:
+          rid: 949340548876468345
+        m_Connections:
+        - rid: 949340548876468351
+    - rid: 949340548876468350
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: False
+        m_PortDataFlowType: 1
+        m_IsFloating: 1
+        m_NodeModel:
+          rid: 949340548876468345
+        m_Connections:
+        - rid: 949340548876468353
+    - rid: 949340548876468351
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 1
+        m_NodeModel:
+          rid: 949340548876468346
+        m_Connections:
+        - rid: 949340548876468349
+    - rid: 949340548876468352
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 949340548876468346
+        m_Connections:
+        - rid: 949340548876468228
+    - rid: 949340548876468353
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 1
+        m_NodeModel:
+          rid: 949340548876468347
+        m_Connections:
+        - rid: 949340548876468350
+    - rid: 949340548876468354
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 949340548876468347
+        m_Connections:
+        - rid: 949340548876468397
+    - rid: 949340548876468396
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 156.79091, y: 90.123116}
+        ID:
+          m_Value0: 4084641297504976079
+          m_Value1: 13622845926851106890
+        Parents: []
+        PortModels:
+        - rid: 949340548876468397
+        - rid: 949340548876468398
+        NodeType:
+          m_SerializableType: Potman.Game.Entities.Units.Behaviours.Modules.PatrolAction,
+            Potman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 4545096015007557993
+          m_Value1: 15272311879420361912
+        m_FieldValues: []
+    - rid: 949340548876468397
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 949340548876468396
+        m_Connections:
+        - rid: 949340548876468354
+    - rid: 949340548876468398
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 949340548876468396
+        m_Connections: []
+--- !u!114 &3029623184246898013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db920e62f70f420bb33c771449926fa4, type: 3}
+  m_Name: Units_Default_Behaviour
+  m_EditorClassIdentifier: 
+  Graphs:
+  - rid: 949340676779933797
+  RootGraph:
+    rid: 949340676779933797
+  m_DebugInfo: {fileID: 7633257075507145525}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 949340676779933797
+      type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        AuthoringAssetID:
+          m_Value0: 6063754690321168515
+          m_Value1: 12939693986520471080
+        m_DebugInfo: {fileID: 7633257075507145525}
+        Root:
+          rid: 949340676779933798
+        BlackboardReference:
+          rid: 949340676779933799
+        BlackboardGroupReferences: []
+        ProcessedNodes: []
+        m_RunningNodes: []
+        m_NodesToEnd:
+          rid: 8298318319233531985
+        m_EndedNodes:
+          rid: 8298318319233531986
+        m_VersionTimestamp: 638772315720747294
+    - rid: 949340676779933798
+      type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 12491821659571820136
+          m_Value1: 6596735951538077285
+        Graph:
+          rid: 949340676779933797
+        m_Parent:
+          rid: -2
+        m_Child:
+          rid: 949340676779933800
+        Repeat: 1
+    - rid: 949340676779933799
+      type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Blackboard:
+          rid: 949340676779933801
+        m_Source: {fileID: 6153837049153223934}
+    - rid: 949340676779933800
+      type: {class: BranchingConditionComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 14120704080530952444
+          m_Value1: 16356084328795903520
+        Graph:
+          rid: 949340676779933797
+        m_Parent:
+          rid: 949340676779933798
+        m_Children:
+        - rid: 949340676779933802
+        - rid: 949340676779933803
+        m_Conditions:
+        - rid: 949340676779933804
+        m_RequiresAllConditions: 0
+        True:
+          rid: 949340676779933802
+        False:
+          rid: 949340676779933803
+    - rid: 949340676779933801
+      type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Variables:
+        - rid: 949340676779933805
+    - rid: 949340676779933802
+      type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 7380806618868610342
+          m_Value1: 1798862753351638779
+        Graph:
+          rid: 949340676779933797
+        m_Parent:
+          rid: 949340676779933800
+        m_Children:
+        - rid: 949340676779933806
+        - rid: 949340676779933807
+    - rid: 949340676779933803
+      type: {class: PatrolAction, ns: Potman.Game.Entities.Units.Behaviours.Modules, asm: Potman}
+      data:
+        ID:
+          m_Value0: 4084641297504976079
+          m_Value1: 13622845926851106890
+        Graph:
+          rid: 949340676779933797
+        m_Parent:
+          rid: 949340676779933800
+    - rid: 949340676779933804
+      type: {class: IsPlayerAliveCondition, ns: Potman.Game.Entities.Units.Behaviours.Modules, asm: Potman}
+      data:
+        Graph:
+          rid: 949340676779933797
+    - rid: 949340676779933805
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 949340676779933806
+      type: {class: FollowPlayer, ns: Potman.Game.Entities.Units.Behaviours.Modules, asm: Potman}
+      data:
+        ID:
+          m_Value0: 7380806618868610342
+          m_Value1: 1798862753351638779
+        Graph:
+          rid: 949340676779933797
+        m_Parent:
+          rid: 949340676779933802
+    - rid: 949340676779933807
+      type: {class: AttackPlayer, ns: Potman.Game.Entities.Units.Behaviours.Modules, asm: Potman}
+      data:
+        ID:
+          m_Value0: 14890389129449174205
+          m_Value1: 5159451632829580154
+        Graph:
+          rid: 949340676779933797
+        m_Parent:
+          rid: 949340676779933802
+    - rid: 8298318319233531985
+      type: {class: 'Stack`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic, asm: mscorlib}
+      data: 
+    - rid: 8298318319233531986
+      type: {class: 'HashSet`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic, asm: System.Core}
+      data: 
+--- !u!114 &4872782522658328003
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd922ae02c94c87a66e46a10a7319b9, type: 3}
+  m_Name: Units_Default_Behaviour Blackboard
+  m_EditorClassIdentifier: 
+  AssetID:
+    m_Value0: 6063754690321168515
+    m_Value1: 12939693986520471080
+  m_Variables:
+  - rid: 949340548876468226
+  m_VersionTimestamp: 638772315693732726
+  m_CommandBuffer:
+    m_Commands: []
+  m_RuntimeBlackboardAsset: {fileID: 6153837049153223934}
+  references:
+    version: 2
+    RefIds:
+    - rid: 949340548876468226
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        IsExposed: 0
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+--- !u!114 &6153837049153223934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
+  m_Name: Units_Default_Behaviour Blackboard
+  m_EditorClassIdentifier: 
+  VersionTimestamp: 638772315693732726
+  AssetID:
+    m_Value0: 6063754690321168515
+    m_Value1: 12939693986520471080
+  m_Blackboard:
+    m_Variables:
+    - rid: 949340563067371629
+  m_SharedBlackboardVariableGuids: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 949340563067371629
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+--- !u!114 &7633257075507145525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b27bb6d9a2c8d540a10dff10acc543e, type: 3}
+  m_Name: Units_Default_Behaviour Debug Info
+  m_EditorClassIdentifier: 
+  m_CodeBreakPointsList: []

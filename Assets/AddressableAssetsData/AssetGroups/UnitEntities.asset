@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UnitEntities
+  m_EditorClassIdentifier: 
+  m_GroupName: UnitEntities
+  m_GUID: 58c7e379373cf6b48b1d64a48e460992
+  m_SerializeEntries:
+  - m_GUID: 5e9664435cc1f994d907a095aaad6fbb
+    m_Address: UnitEntity_Infantry_Boss_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 645e0a49d19137a44bf05edb7608998b
+    m_Address: UnitEntity_Infantry_Boss_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64a5a201787d62947b4a4b21aa3ec895
+    m_Address: UnitEntity_Infantry_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7399e94e3cd18e64599e394a64c60333
+    m_Address: UnitEntity_Infantry_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bcd7d67e5efaa9b489b4bd234b9a0fc2
+    m_Address: UnitEntity_Infantry_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed7ffe1c6b5663d45acbffab725a74f3
+    m_Address: UnitEntity_Aviation_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3e81a56f797583c448e0bae63516e0d6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c34b9212e611500469a30fb91d7907b9, type: 2}
+    - {fileID: 11400000, guid: 9d30f09197ffbab44b42925154afad3d, type: 2}

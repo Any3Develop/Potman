@@ -1,0 +1,317 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8833800324433656886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079e68182543459dbce1abccc2d7d699, type: 3}
+  m_Name: Upgrade Ability
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -472, y: -88}
+  ports:
+    keys:
+    - self
+    values:
+    - _fieldName: self
+      _node: {fileID: -8833800324433656886}
+      _typeQualifiedName: Potman.AbilityTree.Upgrades.UpgradeNode, AbilityTree.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Upgrades
+        node: {fileID: -4387917971296096548}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  self: {fileID: -8833800324433656886}
+  Abilities:
+  - id: 0
+    func: 0
+    stats:
+    - func: 2
+      stat: 0
+      value: 0
+--- !u!114 &-8185376048497058791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef94475850de4feab523715c5c10febf, type: 3}
+  m_Name: Head_Graph_Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -472, y: 200}
+  ports:
+    keys:
+    - self
+    values:
+    - _fieldName: self
+      _node: {fileID: -8185376048497058791}
+      _typeQualifiedName: Potman.AbilityTree.PerkNodeBase, AbilityTree.Editor, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Required
+        node: {fileID: 5804676730818588368}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  self: {fileID: 5804676730818588368}
+  perkNode: {fileID: 5804676730818588368}
+--- !u!114 &-4387917971296096548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dcb0efdd9bb418f918223d1c140e22a, type: 3}
+  m_Name: Perk_Hands_0
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -472, y: -8}
+  ports:
+    keys:
+    - self
+    - Upgrades
+    - Optional
+    - Required
+    values:
+    - _fieldName: self
+      _node: {fileID: -4387917971296096548}
+      _typeQualifiedName: Potman.AbilityTree.PerkNodeBase, AbilityTree.Editor, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Required
+        node: {fileID: 5804676730818588368}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Upgrades
+      _node: {fileID: -4387917971296096548}
+      _typeQualifiedName: Potman.AbilityTree.Upgrades.UpgradeNode, AbilityTree.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: self
+        node: {fileID: -8833800324433656886}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Optional
+      _node: {fileID: -4387917971296096548}
+      _typeQualifiedName: Potman.AbilityTree.PerkNodeBase, AbilityTree.Editor, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Required
+      _node: {fileID: -4387917971296096548}
+      _typeQualifiedName: Potman.AbilityTree.PerkNodeBase, AbilityTree.Editor, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  self: {fileID: -4387917971296096548}
+  Icon: {fileID: 21300000, guid: 856a95492c2a29d42b7ab2d631810cfa, type: 3}
+  Costs:
+  - type: 0
+    value: 1
+  - type: 2
+    value: 2
+  Optional: {fileID: 0}
+  Required: {fileID: 0}
+  Upgrades: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485f1a0e3761d134a9a09e9542d80e3e, type: 3}
+  m_Name: AbilityTree_Potman_Hands
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -4387917971296096548}
+  - {fileID: 5804676730818588368}
+  - {fileID: 837652851272915131}
+  - {fileID: 6741848561602129317}
+  - {fileID: -8833800324433656886}
+  - {fileID: -8185376048497058791}
+--- !u!114 &837652851272915131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d3cd3a3c8a433591f7183cb8b9ea45, type: 3}
+  m_Name: Upgrade Stat
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 56, y: -88}
+  ports:
+    keys:
+    - self
+    values:
+    - _fieldName: self
+      _node: {fileID: 837652851272915131}
+      _typeQualifiedName: Potman.AbilityTree.Upgrades.UpgradeNode, AbilityTree.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Upgrades
+        node: {fileID: 5804676730818588368}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  self: {fileID: 837652851272915131}
+  Stats:
+  - func: 2
+    stat: 0
+    value: 0
+  - func: 2
+    stat: 0
+    value: 0
+--- !u!114 &5804676730818588368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dcb0efdd9bb418f918223d1c140e22a, type: 3}
+  m_Name: Perk_Hands_1.1
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 56, y: -8}
+  ports:
+    keys:
+    - self
+    - Upgrades
+    - Optional
+    - Required
+    values:
+    - _fieldName: self
+      _node: {fileID: 5804676730818588368}
+      _typeQualifiedName: Potman.AbilityTree.PerkNodeBase, AbilityTree.Editor, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Upgrades
+      _node: {fileID: 5804676730818588368}
+      _typeQualifiedName: Potman.AbilityTree.Upgrades.UpgradeNode, AbilityTree.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: self
+        node: {fileID: 6741848561602129317}
+        reroutePoints: []
+      - fieldName: self
+        node: {fileID: 837652851272915131}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Optional
+      _node: {fileID: 5804676730818588368}
+      _typeQualifiedName: Potman.AbilityTree.PerkNodeBase, AbilityTree.Editor, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Required
+      _node: {fileID: 5804676730818588368}
+      _typeQualifiedName: Potman.AbilityTree.PerkNodeBase, AbilityTree.Editor, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: self
+        node: {fileID: -4387917971296096548}
+        reroutePoints: []
+      - fieldName: self
+        node: {fileID: -8185376048497058791}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  self: {fileID: 5804676730818588368}
+  Icon: {fileID: 21300000, guid: 856a95492c2a29d42b7ab2d631810cfa, type: 3}
+  Costs:
+  - type: 1
+    value: 3
+  Optional: {fileID: 0}
+  Required: {fileID: 0}
+  Upgrades: {fileID: 0}
+--- !u!114 &6741848561602129317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079e68182543459dbce1abccc2d7d699, type: 3}
+  m_Name: Upgrade Ability
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 56, y: -168}
+  ports:
+    keys:
+    - self
+    values:
+    - _fieldName: self
+      _node: {fileID: 6741848561602129317}
+      _typeQualifiedName: Potman.AbilityTree.Upgrades.UpgradeNode, AbilityTree.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Upgrades
+        node: {fileID: 5804676730818588368}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  self: {fileID: 6741848561602129317}
+  Abilities:
+  - id: 0
+    func: 0
+    stats:
+    - func: 2
+      stat: 0
+      value: 0

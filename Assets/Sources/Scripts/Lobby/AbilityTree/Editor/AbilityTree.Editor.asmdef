@@ -1,0 +1,21 @@
+{
+    "name": "AbilityTree.Editor",
+    "rootNamespace": "Potman",
+    "references": [
+        "Potman",
+        "XNode",
+        "XNodeEditor",
+        "Potman.SerializableDictionary"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

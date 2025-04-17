@@ -1,0 +1,90 @@
+[
+  {
+    "$type": "Potman.Lobby.AbilityTree.Data.AbilityNode, Potman",
+    "Id": "Perk_Hands_0",
+    "GraphId": "AbilityTree_Potman_Hands",
+    "Icon": "Potman-Logo",
+    "Depends": [],
+    "Costs": [
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.CostModel, Potman",
+        "type": "Common",
+        "value": 1
+      },
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.CostModel, Potman",
+        "type": "Mythic",
+        "value": 2
+      }
+    ],
+    "Upgrades": [
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeAbilityModel, Potman",
+        "id": "BattleAbility0",
+        "func": "Union",
+        "stats": [
+          {
+            "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeStatModel, Potman",
+            "func": "Addition",
+            "stat": "None",
+            "value": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$type": "Potman.Lobby.AbilityTree.Data.AbilityNode, Potman",
+    "Id": "Perk_Hands_1.1",
+    "GraphId": "AbilityTree_Potman_Hands",
+    "Icon": "Potman-Logo",
+    "Depends": [
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.AbilityLinkNode, Potman",
+        "Id": "Perk_Hands_0",
+        "GraphId": "AbilityTree_Potman_Hands",
+        "IsRequired": true
+      },
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.AbilityLinkNode, Potman",
+        "Id": "Perk_Hands_1.1",
+        "GraphId": "AbilityTree_Potman_Hands",
+        "IsRequired": true
+      }
+    ],
+    "Costs": [
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.CostModel, Potman",
+        "type": "Rare",
+        "value": 3
+      }
+    ],
+    "Upgrades": [
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeAbilityModel, Potman",
+        "id": "BattleAbility0",
+        "func": "Union",
+        "stats": [
+          {
+            "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeStatModel, Potman",
+            "func": "Addition",
+            "stat": "None",
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeStatModel, Potman",
+        "func": "Addition",
+        "stat": "None",
+        "value": 0.0
+      },
+      {
+        "$type": "Potman.Lobby.AbilityTree.Data.Upgrades.UpgradeStatModel, Potman",
+        "func": "Addition",
+        "stat": "None",
+        "value": 0.0
+      }
+    ]
+  }
+]
